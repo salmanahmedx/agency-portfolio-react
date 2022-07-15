@@ -27,7 +27,7 @@ const MovieDetail = () => {
                         {movie[0]?.awards?.map(award => <Award title={award.title} description={award.description} key={award.title}></Award>)}
                     </Awards>
                     <ImageDisplay>
-                        <img src={movie[0]?.secondaryImg} alt="" />
+                        <img src={movie[0]?.secondaryImg} alt={movie[0]?.title} />
                     </ImageDisplay>
                 </Details>
             )}
@@ -43,6 +43,10 @@ const HeadLine = styled.div`
 min-height: 90vh;
 padding-top:20vh;
 position: relative;
+display: flex; 
+flex-direction: column;
+justify-content: center;
+align-items: center;
 h2{
     position: absolute;
     top: 10%;
