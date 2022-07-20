@@ -54,6 +54,9 @@ padding: 5rem 10rem;
 h2{
     padding: 1rem 0rem;
 }
+@media (max-width: 1300px){
+    padding: 2rem 2rem;
+}
 `
 
 const Movie = styled(motion.div)`
