@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { pageAnimation } from './animation';
 import { sliderContainer, fade, photoAnim, lineAnim, slider } from './animation';
 import { useScroll } from '../components/useScroll';
-
+import ScrolledTop from '../components/ScrolledTop';
 
 const OurWork = () => {
     const [element, controls] = useScroll();
@@ -42,6 +42,7 @@ const OurWork = () => {
                 <Link to="/work/good-times">
                     <img src={goodtimes} alt="goodtimes" /></Link>
             </Movie>
+            <ScrolledTop></ScrolledTop>
         </Work>
     );
 };
